@@ -1,59 +1,176 @@
+```html
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว</title>
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="profile-style.css">
 </head>
 
 <body>
 
+    <nav class="navbar">
+        <div class="logo">Presentation of personal information<span>.</span></div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-
-<div class="container">
-
-    <div class="profile-card">
-
-        <div class="profile-image">
-    <img src="726231065_2485221785277138_6762612812537725517_n.jpg" alt="รูปโปรไฟล์">
-</div>
-
-        <div class="profile-info">
-            <h1>ประวัติส่วนตัว</h1>
-
-            <p><b>ชื่อ:</b> นาย วิษณุ วงศ์ชลศรี</p>
-            <p><b>ชื่อเล่น:</b> นาย</p>
-            <p><b>อายุ:</b> 23 ปี</p>
-            <p><b>วันเกิด:</b> 9/มีนายคม/2546</p>
-            <p><b>สถานศึกษา:</b> มหาลัยศรีทุม(บางเขน)</p>
-            <p><b>สาขา:</b> เทคโนโลยีสาระสนเทศและการสื่อสาร</p>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Visanu Wongchonsre <span>วิษณุ วงศ์ชลศรี</span></h1>
+            <h2>ประวัติส่วนตัว</h2>
+            <div class="buttons">
+                <a href="#about" class="btn primary">About Me</a>
+                <a href="#projects" class="btn secondary">My Projects</a>
+            </div>
         </div>
 
-    </div>
+        <div class="profile">
+            <div class="profile-circle">
+                <img src="profile.jpg" alt="Profile">
+            </div>
+        </div>
+    </section>
 
-    <div class="box">
-        <h2>เกี่ยวกับฉัน</h2>
-        <p>
-            ผมเป็นคนตรงต่อเวลา เมื่อได้รับหมอบหมายอะไรจะทำให้เต็มที่ มีความรับผิดชอบ ชอบดูหนังฟังเพลงเวลาเบื่อๆ 
-            ชอบเลี้ยงหมา แมว ปลา ชอบรถแต่งหรือรถแนว90s ทำของกินเองอยู่เสมอ 
-        </p>
-    </div>
+    <section id="education" class="education-section">
+        <div class="education-title">
+            <h2>ประวัติการศึกษา</h2>
+        </div>
 
-    <div class="box">
-        <h2>งานอดิเรก</h2>
-        <p>
-            เล่นเกม ฟังเพลง ดูหนัง วิ่ง
-            
-        </p>
-    </div>
+        <div class="education-line">
 
-    <div class="box">
+            <div class="education-item">
+                <div class="timeline-dot"></div>
+                <div class="education-content">
+                    <h3>ประกาศนียบัตรวิชาชีพ (ปวช.)</h3>
+                    <p class="school">วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา (VBAC)</p>
+                    <p>สาขา คอมพิวเตอร์บริหารธุรกิจ</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="timeline-dot"></div>
+                <div class="education-content">
+                    <h3>ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h3>
+                    <p class="school">วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา (VBAC)</p>
+                    <p>สาขา เทคโนโลยีสารสนเทศ</p>
+                </div>
+            </div>
+
+            <div class="education-item current">
+                <div class="timeline-dot"></div>
+                <div class="education-content">
+                    <div class="degree-title">
+                        <h3>ระดับปริญญาตรี</h3>
+                        <span class="current-badge">ปัจจุบัน</span>
+                    </div>
+                    <p class="school">มหาวิทยาลัยศรีปทุม (บางเขน)</p>
+                    <p>คณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศและการสื่อสาร</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <p class="section-title">ABOUT ME</p>
+        <h2>เกี่ยวกับตัวผม</h2>
+
+        <div class="about-box">
+            <div>
+                <h3>นิสัยและความคิดต่างๆ</h3>
+                <p>
+                    สวัสดีครับ ผมเป็นคนที่ชอบเรียนรู้งานใหม่ๆ
+                    มีความรับผิดชอบ ตรงต่อเวลา และพูดคุยเข้าถึงง่าย
+                    เป็นคนเงียบๆ แต่ถ้าสนิทจะเป็นคนกวนๆ และชอบเล่นมุข
+                    สามารถโฟกัสกับงานและรับผิดชอบงานที่ได้รับมอบหมายได้ดี
+                </p>
+            </div>
+
+            <div class="info">
+                <p><strong>ชื่อจริง-นามสกุล</strong> วิษณุ วงศ์ชลศรี</p>
+                <p><strong>First Name-Last Name</strong> Visanu Wongchonsre</p>
+                <p><strong>ชื่อเล่น</strong> นาย</p>
+                <p><strong>อายุ</strong> 23 ปี</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section dark-section">
+        <p class="section-title">MY SKILLS</p>
         <h2>ความสามารถ</h2>
-        <p>ไม่มีสิ่งที่ชอบเป็นพิเศษ แต่สามารถเรียนรู้และศึกษาได้ทุกอย่าง</p>
-    </div>
 
-</div>
+        <div class="skills">
+            <div class="skill-card">
+                <span>01</span>
+                <h3>HTML</h3>
+                <p>โครงสร้างเว็บไซต์</p>
+            </div>
+
+            <div class="skill-card">
+                <span>02</span>
+                <h3>CSS</h3>
+                <p>ออกแบบและตกแต่งเว็บไซต์</p>
+            </div>
+
+            <div class="skill-card">
+                <span>03</span>
+                <h3>JavaScript</h3>
+                <p>เพิ่มความสามารถให้เว็บไซต์</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <p class="section-title">MY WORK</p>
+        <h2>ผลงานของผม</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <div class="project-number">01</div>
+                <h3>Moto Expo</h3>
+                <p>Staff, ผู้ดูแลบูธ และตรวจการทำงานวันก่อสร้างและรื้อถอน</p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">02</div>
+                <h3>Moto Show</h3>
+                <p>Staff, ผู้ดูแลบูธ และตรวจการทำงานวันก่อสร้างและรื้อถอน</p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">03</div>
+                <h3>Money Expo</h3>
+                <p>Staff, ผู้ดูแลบูธ และตรวจการทำงานวันก่อสร้างและรื้อถอน</p>
+                <a href="#">View Project →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>ช่องทางการติดต่อ</h2>
+        <a>095-197-4154</a>
+        <a>, nayhahaha555@gmail.com</a>
+    </section>
 
 </body>
+
 </html>
