@@ -775,3 +775,53 @@ footer {
     }
 
 }
+.menu-toggle {
+display: none;
+background: none;
+border: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+.navbar {
+    position: relative;
+    padding: 15px 20px;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #222;
+    flex-direction: column;
+    padding: 15px 0;
+    z-index: 999;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu a {
+    margin: 0;
+    padding: 12px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu a:hover {
+    background: #333;
+    color: #00bfff;
+}
+
+}
