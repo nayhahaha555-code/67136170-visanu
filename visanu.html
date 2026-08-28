@@ -21,65 +21,24 @@
 
     <nav class="navbar">
 
+```
 <div class="logo">
     My Portfolio<span>.</span>
 </div>
 
-.navbar {
-background: #222;
-padding: 15px 30px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
+<!-- Hamburger -->
+<button class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</button>
 
-.menu-toggle {
-display: none;
-margin-left: auto;
-background: none;
-border: none;
-color: white;
-font-size: 30px;
-cursor: pointer;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-
-```
-.navbar {
-    padding: 15px 20px;
-}
-
-.menu-toggle {
-    display: block;
-}
-
-.menu {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    background: #222;
-    flex-direction: column;
-    padding: 10px 0;
-    z-index: 999;
-    border-radius: 0 0 0 10px;
-}
-
-.menu.active {
-    display: flex;
-}
-
-.menu a {
-    margin: 0;
-    padding: 12px 20px;
-    text-align: center;
-}
-
-}
-
+<div class="menu" id="menu">
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
 
 </nav>
 
