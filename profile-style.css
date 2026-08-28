@@ -788,7 +788,26 @@ cursor: pointer;
 @media (max-width: 768px) {
 
 .navbar {
-    position: relative;
+background: #222;
+padding: 15px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu-toggle {
+display: none;
+margin-left: auto;
+background: none;
+border: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+.navbar {
     padding: 15px 20px;
 }
 
@@ -799,13 +818,14 @@ cursor: pointer;
 .menu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    top: 70px;
+    right: 0;
+    width: 200px;
     background: #222;
     flex-direction: column;
-    padding: 15px 0;
+    padding: 10px 0;
     z-index: 999;
+    border-radius: 0 0 0 10px;
 }
 
 .menu.active {
@@ -816,12 +836,8 @@ cursor: pointer;
     margin: 0;
     padding: 12px 20px;
     text-align: center;
-    width: 100%;
 }
-
-.menu a:hover {
-    background: #333;
-    color: #00bfff;
-}
+```
 
 }
+
